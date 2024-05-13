@@ -407,11 +407,22 @@ footer {
   textarea {
     width: 60%;
   }
+
   button {
     padding: 8px 20px;
     font-size: 18px;
     border-radius: 10px;
     margin-bottom: 40px;
+    width: 100px;
+    text-align: center;
+  }
+
+  .scrollto {
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 50px;
+    text-align: center;
   }
 }
 
