@@ -303,6 +303,16 @@ footer {
   align-content: center;
 }
 
+.scrollto {
+  color: #fff;
+  border: 2px solid #00aeff;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px;
+  background-color: transparent;
+  width: 5%;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;

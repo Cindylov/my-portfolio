@@ -14,6 +14,7 @@ import {
   RiLinkedinFill,
   RiTwitterXFill,
 } from "react-icons/ri";
+import { BiSolidUpvote } from "react-icons/bi";
 
 const Portfolio = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -63,6 +64,28 @@ const Portfolio = () => {
       progress.style.backgroundColor = "#00aeff"; // Adjust color as needed
     });
   }, []);
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  // Function to handle scrolling and show/hide the button
+  const handleScroll = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // Attach scroll event listener
+  window.addEventListener("scroll", handleScroll);
 
   return (
     <div className="container">
@@ -171,8 +194,8 @@ const Portfolio = () => {
             <img src={foodimages} alt="image" />
             <div className="task">
               <h3>Restaurant Landing-page</h3>
-              <a href="" target="blank">
-                The link
+              <a href="http://restaurant-two-lyart.vercel.app" target="blank">
+                URL
               </a>
             </div>
           </div>
@@ -181,8 +204,8 @@ const Portfolio = () => {
             <img src={todoimages} alt="image" />
             <div className="task">
               <h3>To-do list</h3>
-              <a href="" target="blank">
-                The link
+              <a href="http://to-do-green-psi.vercel.app" target="blank">
+                URL
               </a>
             </div>
           </div>
@@ -191,8 +214,8 @@ const Portfolio = () => {
             <img src={surveyimages} alt="image" />
             <div className="task">
               <h3>survey-form</h3>
-              <a href="" target="blank">
-                The link
+              <a href="http://survey-form-black-six.vercel.app" target="blank">
+                URL
               </a>
             </div>
           </div>
@@ -224,6 +247,19 @@ const Portfolio = () => {
       <footer>
         <p>&copy; Cindy</p>
       </footer>
+
+      <button
+        onClick={scrollToTop}
+        className="scrollto"
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          display: isVisible ? "block" : "none",
+        }}
+      >
+        <BiSolidUpvote />
+      </button>
     </div>
   );
 };
