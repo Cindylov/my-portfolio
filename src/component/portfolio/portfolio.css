@@ -241,6 +241,25 @@ span {
   font-size: 20px;
 }
 
+.proj{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.proj a{
+  text-decoration: none;
+  background: #00aeff;
+  border: 2px solid #fff;
+  border-radius: 20%;
+  font-size: 15px;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+
 .contact {
   padding: 2rem 9% 10rem;
 }
@@ -397,6 +416,12 @@ footer {
   .task p {
     font-size: 18px;
   }
+
+  .proj{
+    flex-direction: column;
+    margin: 10px;
+  }
+
   .contact h1 {
     font-size: 30px;
   }

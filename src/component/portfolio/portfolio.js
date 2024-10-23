@@ -3,9 +3,11 @@ import emailjs from "@emailjs/browser";
 import "./portfolio.css";
 import cv from "./AnyaohaUjunwaCynthiaResume.pdf";
 import photimages from "../../component/images/phot1.png";
-import foodimages from "../../component/images/resturant.PNG";
-import todoimages from "../../component/images/to-do.PNG";
-import surveyimages from "../../component/images/survey.PNG";
+import wheatherimages from "../../component/images/wheather.png";
+// import todoimages from "../../component/images/to-do.PNG";
+import expenses from "../../component/images/expenses.png"
+// import surveyimages from "../../component/images/survey.PNG";
+import fitimages from "../../component/images/fitgoals.png"
 import {
   RiMenuFill,
   RiCloseFill,
@@ -191,32 +193,41 @@ const Portfolio = () => {
         </h1>
         <div className="project-container">
           <div className="fp">
-            <img src={foodimages} alt="image" />
+            <img src={fitimages} alt="image" />
             <div className="task">
-              <h3>Restaurant Landing-page</h3>
-              <a href="http://restaurant-two-lyart.vercel.app" target="blank">
-                URL
+              <h3>fit Goals</h3>
+              <div className="proj">
+              <a href="https://fitgoals.onrender.com" target="blank">
+              Live Preview
               </a>
+              <a href="https://github.com/Cindylov/fitgoals" target="blank">View Code</a>
+              </div>
             </div>
           </div>
 
           <div className="fp">
-            <img src={todoimages} alt="image" />
+            <img src={expenses} alt="image" />
             <div className="task">
-              <h3>To-do list</h3>
-              <a href="http://to-do-green-psi.vercel.app" target="blank">
-                URL
+              <h3>Expenses Tracker</h3>
+              <div className="proj">
+              <a href="https://expenses-taupe.vercel.app/" target="blank">
+              Live Preview
               </a>
+              <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a>
+              </div>
             </div>
           </div>
 
           <div className="fp">
-            <img src={surveyimages} alt="image" />
+            <img src={wheatherimages} alt="image" />
             <div className="task">
-              <h3>survey-form</h3>
-              <a href="http://survey-form-black-six.vercel.app" target="blank">
-                URL
+              <h3>wheather App</h3>
+              <div className="proj">
+              <a href=" https://cindylov.github.io/weather/" target="blank">
+              Live Preview
               </a>
+              <a href="https://github.com/Cindylov/weather" target="blank">View Code</a>
+              </div>
             </div>
           </div>
         </div>
