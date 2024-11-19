@@ -1,13 +1,20 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, /*useEffect,*/ useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./portfolio.css";
 import cv from "./AnyaohaUjunwaCynthiaResume.pdf";
 import photimages from "../../component/images/phot1.png";
 import wheatherimages from "../../component/images/wheather.png";
 // import todoimages from "../../component/images/to-do.PNG";
-import expenses from "../../component/images/expenses.png"
-// import surveyimages from "../../component/images/survey.PNG";
-import fitimages from "../../component/images/fitgoals.png"
+import expenses from "../../component/images/expenses.png";
+import fitimages from "../../component/images/fitgoals.png";
+import htmlimage from "../../component/images/vscode-icons_file-type-html.png";
+import cssimage from "../../component/images/vscode-icons_file-type-css.png";
+import jsimage from "../../component/images/vscode-icons_file-type-js-official.png";
+import tailwindimage from "../../component/images/vscode-icons_file-type-tailwind.png";
+import githubimage from "../../component/images/akar-icons_github-fill.png";
+import bootstrapimage from "../../component/images/logos_bootstrap.png";
+import gitimage from "../../component/images/logos_git-icon.png";
+import reactimage from "../../component/images/logos_react.png";
 import {
   RiMenuFill,
   RiCloseFill,
@@ -48,24 +55,24 @@ const Portfolio = () => {
       );
   };
 
-  const skills = [
-    { name: "HTML", level: 100 },
-    { name: "CSS", level: 90 },
-    { name: "JAVASCRIPT", level: 80 },
-    { name: "REACT JS", level: 70 },
-    { name: "NODE JS", level: 60 },
-    { name: "EXPRESS JS", level: 50 },
-    { name: "MONGODB", level: 40 },
-  ];
+  // const skills = [
+  //   { name: "HTML", level: 100 },
+  //   { name: "CSS", level: 90 },
+  //   { name: "JAVASCRIPT", level: 80 },
+  //   { name: "REACT JS", level: 70 },
+  //   { name: "NODE JS", level: 60 },
+  //   { name: "EXPRESS JS", level: 50 },
+  //   { name: "MONGODB", level: 40 },
+  // ];
 
-  useEffect(() => {
-    skills.forEach((skill) => {
-      const progress = document.getElementById(skill.name);
-      const width = (progress.parentElement.offsetWidth * skill.level) / 100;
-      progress.style.width = `${width}px`;
-      progress.style.backgroundColor = "#00aeff"; // Adjust color as needed
-    });
-  }, []);
+  // useEffect(() => {
+  //   skills.forEach((skill) => {
+  //     const progress = document.getElementById(skill.name);
+  //     const width = (progress.parentElement.offsetWidth * skill.level) / 100;
+  //     progress.style.width = `${width}px`;
+  //     progress.style.backgroundColor = "#00aeff"; // Adjust color as needed
+  //   });
+  // }, []);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -136,7 +143,7 @@ const Portfolio = () => {
               collaboration.
             </p>
             <a href={cv} target="new" className="btn">
-              Download my resume
+              Download my Resume
             </a>
 
             <div class="social">
@@ -165,13 +172,13 @@ const Portfolio = () => {
           </div>
 
           <div className="infoimgcont">
-            <img src={photimages} alt="my picture" className="photo" />
+            <img src={photimages} alt="mine" className="photo" />
           </div>
         </div>
       </section>
 
       {/* skill section design */}
-      <section id="skill" className="skill">
+      {/* <section id="skill" className="skill">
         <h1>My Skills</h1>
         <div className="skills">
           {skills.map((skill, index) => (
@@ -184,16 +191,35 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+      </section> */}
+
+      {/* skill */}
+      <section id="skill" className="skill">
+      <h1>My Skills</h1>
+      <div className="skilpic">
+      <img src={htmlimage} alt="html" />
+      <img src={cssimage} alt="css" />
+      <img src={jsimage} alt="javascript" />
+      <img src={bootstrapimage} alt="bootstrap" />
+      </div>
+
+      <div className="skillpics">
+      <img src={tailwindimage} alt="tailwind" />
+      <img src={reactimage} alt="react" />
+      <img src={githubimage} alt="github" />
+      <img src={gitimage} alt="git" />
+      </div>
       </section>
 
-      {/* future project design section */}
+      {/* project design section */}
       <section id="project" className="project">
         <h1>
           <span>Projects</span>
         </h1>
         <div className="project-container">
+          <div className="">
           <div className="fp">
-            <img src={fitimages} alt="image" />
+            <img src={fitimages} alt="fitgoal" />
             <div className="task">
               <h3>fit Goals</h3>
               <div className="proj">
@@ -205,8 +231,15 @@ const Portfolio = () => {
             </div>
           </div>
 
+          <div className="descrip">
+          <h4>Description</h4>
+          <p>This is a health fitness web app to record excercise and track water intake with BMI</p>
+          </div>
+          </div>
+
+          <div className="">
           <div className="fp">
-            <img src={expenses} alt="image" />
+            <img src={expenses} alt="expense" />
             <div className="task">
               <h3>Expenses Tracker</h3>
               <div className="proj">
@@ -218,8 +251,15 @@ const Portfolio = () => {
             </div>
           </div>
 
+          <div className="descrip">
+          <h4>Description</h4>
+          <p>This is daily/monthly budget expenses tracker that you can use to track your budget</p>
+          </div>
+          </div>
+
+          <div className="">
           <div className="fp">
-            <img src={wheatherimages} alt="image" />
+            <img src={wheatherimages} alt="wheather" />
             <div className="task">
               <h3>wheather App</h3>
               <div className="proj">
@@ -229,6 +269,12 @@ const Portfolio = () => {
               <a href="https://github.com/Cindylov/weather" target="blank">View Code</a>
               </div>
             </div>
+          </div>
+
+          <div className="descrip">
+          <h4>Description</h4>
+          <p>This web app is to check the weather of your location/city</p>
+          </div>
           </div>
         </div>
       </section>

@@ -147,40 +147,62 @@ span {
   padding-bottom: 30px;
 }
 
-.skill-item {
+.skill img{
+  max-width: 200px;
+}
+
+.skilpic, .skillpics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  transition:3s ease;
+}
+
+.skillpics>img:hover{
+  scale: 1.1;
+}
+
+.skilpic>img:hover{
+  scale: 1.1;
+}
+
+/* .skill-item {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-}
+} */
 
-.skill-name {
+/* .skill-name {
   margin-bottom: 5px;
-}
+} */
 
-.progress-bar {
+/* .progress-bar {
   position: relative;
   width: 70%;
   height: 10px;
   background-color: #eee;
   border-radius: 5px;
-}
+} */
 
-.progress {
+/* .progress {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   background-color: #00aeff;
   border-radius: 5px;
-}
+} */
 
-.progress-percent {
+/* .progress-percent {
   position: absolute;
   top: -20px;
   right: 0;
   font-size: 12px;
   color: #fff;
-}
+} */
 
 .project {
   padding: 2rem 9% 10rem;
@@ -258,6 +280,11 @@ span {
   color: #fff;
   margin: 10px;
   padding: 10px;
+}
+
+.descrip{
+  margin: 5%;
+  text-align: center;
 }
 
 .contact {
