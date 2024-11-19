@@ -148,10 +148,10 @@ span {
 }
 
 .skill img{
-  max-width: 200px;
+  max-width: 100px;
 }
 
-.skilpic, .skillpics{
+.skilpic{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -159,10 +159,6 @@ span {
   flex-wrap: wrap;
   margin-bottom: 5%;
   transition:3s ease;
-}
-
-.skillpics>img:hover{
-  scale: 1.1;
 }
 
 .skilpic>img:hover{
@@ -242,7 +238,7 @@ span {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #00aeff);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #00aeff);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,6 +253,7 @@ span {
 
 .task h3 {
   font-size: 30px;
+  color: #fff;
 }
 
 .task p {
@@ -276,7 +273,7 @@ span {
   background: #00aeff;
   border: 2px solid #fff;
   border-radius: 20%;
-  font-size: 15px;
+  font-size: 18px;
   color: #fff;
   margin: 10px;
   padding: 10px;

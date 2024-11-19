@@ -15,6 +15,9 @@ import githubimage from "../../component/images/akar-icons_github-fill.png";
 import bootstrapimage from "../../component/images/logos_bootstrap.png";
 import gitimage from "../../component/images/logos_git-icon.png";
 import reactimage from "../../component/images/logos_react.png";
+import expressimage from "../../component/images/expressjs.png";
+import mongoimage from "../../component/images/mongo.webp";
+import nodeimage from "../../component/images/node.png";
 import {
   RiMenuFill,
   RiCloseFill,
@@ -203,11 +206,17 @@ const Portfolio = () => {
       <img src={bootstrapimage} alt="bootstrap" />
       </div>
 
-      <div className="skillpics">
+      <div className="skilpic">
       <img src={tailwindimage} alt="tailwind" />
       <img src={reactimage} alt="react" />
       <img src={githubimage} alt="github" />
       <img src={gitimage} alt="git" />
+      </div>
+
+      <div className="skilpic">
+        <img src= {nodeimage} alt="nodejs" />
+        <img src= {expressimage} alt="expressjs"/>
+        <img src={mongoimage} alt="mongodb"/>
       </div>
       </section>
 
