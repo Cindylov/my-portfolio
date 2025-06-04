@@ -2,9 +2,12 @@ import React, { useState, /*useEffect,*/ useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./portfolio.css";
 import cv from "./AnyaohaUjunwaCynthiaResume.pdf";
+import mycv from "./CV_Anyaoha_Ujunwa_Cynthia.pdf";
 import photimages from "../../component/images/phot1.png";
 import wheatherimages from "../../component/images/wheather.png";
-// import todoimages from "../../component/images/to-do.PNG";
+import celeimage from "../../component/images/cele.png";
+import oikimage from "../../component/images/oik.png";
+import laso from "../../component/images/las.png";
 import expenses from "../../component/images/expenses.png";
 import fitimages from "../../component/images/fitgoals.png";
 import htmlimage from "../../component/images/vscode-icons_file-type-html.png";
@@ -136,7 +139,7 @@ const Portfolio = () => {
             <h3>Hello, It's me</h3>
             <h1>Anyaoha Ujunwa Cynthia</h1>
             <h3>
-              I am a <span>Frontend Developer.</span>
+              I am a <span>Full-stack Developer.</span>
             </h3>
             <p>
               A dedicated web developer, focused on creating visually appealing
@@ -145,8 +148,12 @@ const Portfolio = () => {
               <br />
               collaboration.
             </p>
-            <a href={cv} target="new" className="btn">
+            {/* <a href={cv} target="new" className="btn">
               Download my Resume
+            </a> */}
+
+            <a href={mycv} target="new" className="btn">
+              Download my CV
             </a>
 
             <div class="social">
@@ -225,6 +232,7 @@ const Portfolio = () => {
         <h1>
           <span>Projects</span>
         </h1>
+        {/* one */}
         <div className="project-container">
           <div className="">
           <div className="fp">
@@ -235,18 +243,78 @@ const Portfolio = () => {
               <a href="https://fitgoals.onrender.com" target="blank">
               Live Preview
               </a>
-              <a href="https://github.com/Cindylov/fitgoals" target="blank">View Code</a>
+              {/* <a href="https://github.com/Cindylov/fitgoals" target="blank">View Code</a> */}
               </div>
             </div>
           </div>
-
-          <div className="descrip">
-          <h4>Description</h4>
-          <p>This is a health fitness web app to record excercise and track water intake with BMI</p>
-          </div>
           </div>
 
+{/* two */}
           <div className="">
+          <div className="fp">
+            <img src={celeimage} alt="cele imge" />
+            <div className="task">
+              <h3>Celestial</h3>
+              <div className="proj">
+              <a href="http://www.celestialcrafters.co.ke" target="blank">
+              Live Preview
+              </a>
+              {/* <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a> */}
+              </div>
+            </div>
+          </div>
+          </div>
+
+          {/* three */}
+          <div className="">
+          <div className="fp">
+            <img src={laso} alt="lasom imge" />
+            <div className="task">
+              <h3>Static E-commere</h3>
+              <div className="proj">
+              <a href="https://task2-six-pi.vercel.app/" target="blank">
+              Live Preview
+              </a>
+              {/* <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a> */}
+              </div>
+            </div>
+          </div>
+          </div>
+
+          {/* four */}
+            {/* <div className="">
+          <div className="fp">
+            <img src={oikimage} alt="oikus" />
+            <div className="task">
+              <h3>Women in tech</h3>
+              <div className="proj">
+              <a href="womenintech24.coriftech.com" target="blank">
+              Live Preview
+              </a>
+              <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a>
+              </div>
+            </div>
+          </div>
+          </div> */}
+
+          {/* five */}
+          {/* <div className="">
+          <div className="fp">
+            <img src={oikimage} alt="oikus" />
+            <div className="task">
+              <h3>landing page</h3>
+              <div className="proj">
+              <a href="https://expenses-taupe.vercel.app/" target="blank">
+              Live Preview
+              </a>
+              <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a>
+              </div>
+            </div>
+          </div>
+          </div> */}
+
+{/* six */}
+          {/* <div className="">
           <div className="fp">
             <img src={expenses} alt="expense" />
             <div className="task">
@@ -259,14 +327,10 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
+          </div> */}
 
-          <div className="descrip">
-          <h4>Description</h4>
-          <p>This is daily/monthly budget expenses tracker that you can use to track your budget</p>
-          </div>
-          </div>
-
-          <div className="">
+{/* seven */}
+          {/* <div className="">
           <div className="fp">
             <img src={wheatherimages} alt="wheather" />
             <div className="task">
@@ -279,12 +343,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-
-          <div className="descrip">
-          <h4>Description</h4>
-          <p>This web app is to check the weather of your location/city</p>
-          </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
