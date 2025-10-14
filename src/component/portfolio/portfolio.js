@@ -1,12 +1,11 @@
 import React, { useState, /*useEffect,*/ useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./portfolio.css";
-import cv from "./AnyaohaUjunwaCynthiaResume.pdf";
 import mycv from "./CV_Anyaoha_Ujunwa_Cynthia.pdf";
 import photimages from "../../component/images/phot1.png";
-import wheatherimages from "../../component/images/wheather.png";
+// import wheatherimages from "../../component/images/wheather.png";
 import celeimage from "../../component/images/cele.png";
-import oikimage from "../../component/images/oik.png";
+// import oikimage from "../../component/images/oik.png";
 import laso from "../../component/images/las.png";
 import expenses from "../../component/images/expenses.png";
 import fitimages from "../../component/images/fitgoals.png";
@@ -21,6 +20,7 @@ import reactimage from "../../component/images/logos_react.png";
 import expressimage from "../../component/images/expressjs.png";
 import mongoimage from "../../component/images/mongo.webp";
 import nodeimage from "../../component/images/node.png";
+import movie from "../../component/images/movie.png";
 import {
   RiMenuFill,
   RiCloseFill,
@@ -61,24 +61,6 @@ const Portfolio = () => {
       );
   };
 
-  // const skills = [
-  //   { name: "HTML", level: 100 },
-  //   { name: "CSS", level: 90 },
-  //   { name: "JAVASCRIPT", level: 80 },
-  //   { name: "REACT JS", level: 70 },
-  //   { name: "NODE JS", level: 60 },
-  //   { name: "EXPRESS JS", level: 50 },
-  //   { name: "MONGODB", level: 40 },
-  // ];
-
-  // useEffect(() => {
-  //   skills.forEach((skill) => {
-  //     const progress = document.getElementById(skill.name);
-  //     const width = (progress.parentElement.offsetWidth * skill.level) / 100;
-  //     progress.style.width = `${width}px`;
-  //     progress.style.backgroundColor = "#00aeff"; // Adjust color as needed
-  //   });
-  // }, []);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -148,9 +130,6 @@ const Portfolio = () => {
               <br />
               collaboration.
             </p>
-            {/* <a href={cv} target="new" className="btn">
-              Download my Resume
-            </a> */}
 
             <a href={mycv} target="new" className="btn">
               Download my CV
@@ -187,21 +166,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* skill section design */}
-      {/* <section id="skill" className="skill">
-        <h1>My Skills</h1>
-        <div className="skills">
-          {skills.map((skill, index) => (
-            <div className="skill-item" key={index}>
-              <div className="skill-name">{skill.name}</div>
-              <div className="progress-bar">
-                <div className="progress" id={skill.name}></div>
-                <div className="progress-percent">{skill.level}%</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section> */}
 
       {/* skill */}
       <section id="skill" className="skill">
@@ -282,36 +246,36 @@ const Portfolio = () => {
           </div>
 
           {/* four */}
-            {/* <div className="">
+            <div className="">
           <div className="fp">
-            <img src={oikimage} alt="oikus" />
+            <img src={movie} alt="oikus" />
             <div className="task">
-              <h3>Women in tech</h3>
+              <h3>Movie Recommendation Web-App</h3>
               <div className="proj">
-              <a href="womenintech24.coriftech.com" target="blank">
+              <a href="https://movie-app-zeta-dusky.vercel.app/" target="blank">
               Live Preview
               </a>
-              <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a>
+              {/* <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a> */}
               </div>
             </div>
           </div>
-          </div> */}
+          </div>
 
           {/* five */}
-          {/* <div className="">
+          <div className="">
           <div className="fp">
-            <img src={oikimage} alt="oikus" />
+            <img src={expenses} alt="oikus" />
             <div className="task">
-              <h3>landing page</h3>
+              <h3>Expenses Tracker</h3>
               <div className="proj">
               <a href="https://expenses-taupe.vercel.app/" target="blank">
               Live Preview
               </a>
-              <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a>
+              {/* <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a> */}
               </div>
             </div>
           </div>
-          </div> */}
+          </div>
 
 {/* six */}
           {/* <div className="">
