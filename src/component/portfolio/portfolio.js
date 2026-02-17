@@ -214,20 +214,7 @@ const Portfolio = () => {
           </div>
 
 {/* two */}
-          // <div className="">
-          // <div className="fp">
-          //   <img src={celeimage} alt="cele imge" />
-          //   <div className="task">
-          //     <h3>Celestial</h3>
-          //     <div className="proj">
-          //     <a href="http://www.celestialcrafters.co.ke" target="blank">
-          //     Live Preview
-          //     </a>
-              {/* <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a> */}
-          //     </div>
-          //   </div>
-          // </div>
-          // </div>
+          
 
           {/* three */}
           <div className="">
