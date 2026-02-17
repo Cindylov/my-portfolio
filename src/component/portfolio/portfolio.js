@@ -4,7 +4,7 @@ import "./portfolio.css";
 import mycv from "./CV_Anyaoha_Ujunwa_Cynthia.pdf";
 import photimages from "../../component/images/phot1.png";
 // import wheatherimages from "../../component/images/wheather.png";
-import celeimage from "../../component/images/cele.png";
+// import celeimage from "../../component/images/cele.png";
 // import oikimage from "../../component/images/oik.png";
 import laso from "../../component/images/las.png";
 import expenses from "../../component/images/expenses.png";
@@ -214,20 +214,20 @@ const Portfolio = () => {
           </div>
 
 {/* two */}
-          <div className="">
-          <div className="fp">
-            <img src={celeimage} alt="cele imge" />
-            <div className="task">
-              <h3>Celestial</h3>
-              <div className="proj">
-              <a href="http://www.celestialcrafters.co.ke" target="blank">
-              Live Preview
-              </a>
+          // <div className="">
+          // <div className="fp">
+          //   <img src={celeimage} alt="cele imge" />
+          //   <div className="task">
+          //     <h3>Celestial</h3>
+          //     <div className="proj">
+          //     <a href="http://www.celestialcrafters.co.ke" target="blank">
+          //     Live Preview
+          //     </a>
               {/* <a href="https://github.com/Cindylov/expenses" target="blank">View Code</a> */}
-              </div>
-            </div>
-          </div>
-          </div>
+          //     </div>
+          //   </div>
+          // </div>
+          // </div>
 
           {/* three */}
           <div className="">
